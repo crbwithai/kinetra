@@ -112,6 +112,11 @@ React · Vite · TypeScript · Tailwind CSS · React Router · Framer Motion
 ## 8. İki dil
 
 - **Hiçbir metin bileşen içine yazılmaz.** Tümü `tr` ve `en` sözlük dosyalarında durur.
+  **Dar istisna:** `src/routes/GlobalNotFound.tsx` — tanınmayan bir dil kodundan (örn. `/de`)
+  ulaşılan genel 404 sayfası. Bu sayfada hangi dilde gösterileceği bilinemez (henüz bir
+  `LangContext` yok, tavuk-yumurta problemi), o yüzden metni iki dilde birden doğrudan
+  bileşene yazıldı. Geçerli bir dil kodu altındaki 404'ler (`/tr/olmayan-sayfa` gibi) bu
+  istisnaya girmez — onlar dil bilindiği için normal şekilde sözlükten okunur.
 - URL yapısı: `/tr/...` ve `/en/...`
 - Sayfaların iki dildeki karşılıkları bir eşleştirme tablosunda tutulur; dil değiştirildiğinde
   kullanıcı **aynı sayfanın** diğer dilinde kalır, ana sayfaya atılmaz.
@@ -197,6 +202,8 @@ raw-media/       ham PNG'ler — repoya girmez
 src/
   components/    tekrar kullanılan parçalar
   sections/      sayfa bölümleri
+  pages/         rota bileşenleri (Home, NotFound...)
+  routes/        router yapılandırması, dil katmanı (LangLayout, GlobalNotFound)
   data/          ürün ve branş verisi
   i18n/          tr / en sözlükleri, rota eşleştirmesi
   styles/        renk ve ölçek token'ları

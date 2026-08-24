@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "home": {
+      "title": "KINETRA",
+      "description": "Yer tutucu açıklama — içerik sonra gelecek."
+    }
+  },
+  "nav": {
+    "langSwitch": "EN"
+  },
+  "hero": {
+    "baslik": "Burası hero gelecek."
+  },
+  "notFound": {
+    "baslik": "Sayfa bulunamadı",
+    "aciklama": "Aradığın sayfa mevcut değil."
+  }
+}

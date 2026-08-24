@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "home": {
+      "title": "KINETRA",
+      "description": "Placeholder description — real content coming later."
+    }
+  },
+  "nav": {
+    "langSwitch": "TR"
+  },
+  "hero": {
+    "baslik": "Hero goes here."
+  },
+  "notFound": {
+    "baslik": "Page not found",
+    "aciklama": "The page you're looking for doesn't exist."
+  }
+}
