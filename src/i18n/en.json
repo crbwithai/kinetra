@@ -14,5 +14,65 @@
   "notFound": {
     "baslik": "Page not found",
     "aciklama": "The page you're looking for doesn't exist."
+  },
+  "branches": {
+    "football": { "term": "FOOTBALL", "product": "Cleats" },
+    "athletics": { "term": "ATHLETICS", "product": "Running Shoes" },
+    "swimming": { "term": "SWIMMING", "product": "Competition Swimsuit" },
+    "basketball": { "term": "BASKETBALL", "product": "Basketball" },
+    "volleyball": { "term": "VOLLEYBALL", "product": "Volleyball" },
+    "tennis": { "term": "TENNIS", "product": "Tennis Racket" },
+    "table-tennis": { "term": "TABLE TENNIS", "product": "Paddle" },
+    "badminton": { "term": "BADMINTON", "product": "Badminton Racket" },
+    "handball": { "term": "HANDBALL", "product": "Handball" },
+    "cycling": { "term": "CYCLING", "product": "Cycling Helmet" },
+    "boxing": { "term": "BOXING", "product": "Boxing Gloves" },
+    "wrestling": { "term": "WRESTLING", "product": "Wrestling Shoes" },
+    "weightlifting": { "term": "WEIGHTLIFTING", "product": "Lifting Belt" },
+    "yoga": { "term": "YOGA", "product": "Yoga Mat" },
+    "rowing": { "term": "ROWING", "product": "Oar Blade" },
+    "climbing": { "term": "CLIMBING", "product": "Climbing Harness" },
+    "skiing": { "term": "SKIING", "product": "Ski Boots" },
+    "ice-skating": { "term": "ICE SKATING", "product": "Ice Skates" },
+    "archery": { "term": "ARCHERY", "product": "Bow" },
+    "judo": { "term": "JUDO", "product": "Judo Belt" }
+  },
+  "tech": {
+    "kinegrip": {
+      "claim": "Holds when wet.",
+      "evidence": "Rubber outsole texture, tested on wet and dry ground."
+    },
+    "terracell": {
+      "claim": "Returns the energy.",
+      "evidence": "Cellular foam structure absorbs impact and pushes back."
+    },
+    "hydroskin": {
+      "claim": "Cuts through water.",
+      "evidence": "Smooth surface, woven to reduce drag."
+    },
+    "aeromesh": {
+      "claim": "Breathes.",
+      "evidence": "Perforated knit releases heat."
+    }
+  },
+  "showcase": {
+    "football": {
+      "cleats": { "name": "Cleats", "description": "4mm rubber outsole, tested on wet grass." },
+      "ball": { "name": "Match Ball", "description": "Thermally bonded surface, stays dry in the rain." },
+      "jersey": { "name": "Jersey", "description": "Perforated knit fabric, stays cool for 90 minutes." },
+      "shinGuards": { "name": "Shin Guards", "description": "Cellular foam padding absorbs impact." }
+    },
+    "athletics": {
+      "shoes": { "name": "Running Shoes", "description": "Cellular foam sole returns energy with every step." },
+      "spikes": { "name": "Sprint Spikes", "description": "8 pins, full grip in the first 30 meters." },
+      "singlet": { "name": "Race Singlet", "description": "150 grams, perforated knit, wicks sweat away." },
+      "baton": { "name": "Relay Baton", "description": "Textured rubber surface, won't slip during the handoff." }
+    },
+    "swimming": {
+      "suit": { "name": "Competition Swimsuit", "description": "Smooth fabric, woven to cut drag through water." },
+      "goggles": { "name": "Swim Goggles", "description": "Hydrodynamic profile, anti-fog coated." },
+      "cap": { "name": "Swim Cap", "description": "One-piece mold, keeps hair flat against the water." },
+      "kickboard": { "name": "Kickboard", "description": "Cellular foam body, keeps you afloat." }
+    }
   }
 }

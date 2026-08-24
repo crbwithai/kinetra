@@ -14,5 +14,65 @@
   "notFound": {
     "baslik": "Sayfa bulunamadı",
     "aciklama": "Aradığın sayfa mevcut değil."
+  },
+  "branches": {
+    "football": { "term": "FUTBOL", "product": "Krampon" },
+    "athletics": { "term": "ATLETİZM", "product": "Koşu Ayakkabısı" },
+    "swimming": { "term": "YÜZME", "product": "Yarış Mayosu" },
+    "basketball": { "term": "BASKETBOL", "product": "Basketbol Topu" },
+    "volleyball": { "term": "VOLEYBOL", "product": "Voleybol Topu" },
+    "tennis": { "term": "TENİS", "product": "Tenis Raketi" },
+    "table-tennis": { "term": "MASA TENİSİ", "product": "Raket" },
+    "badminton": { "term": "BADMİNTON", "product": "Badminton Raketi" },
+    "handball": { "term": "HENTBOL", "product": "Hentbol Topu" },
+    "cycling": { "term": "BİSİKLET", "product": "Bisiklet Kaskı" },
+    "boxing": { "term": "BOKS", "product": "Boks Eldiveni" },
+    "wrestling": { "term": "GÜREŞ", "product": "Güreş Ayakkabısı" },
+    "weightlifting": { "term": "HALTER", "product": "Kaldırma Kemeri" },
+    "yoga": { "term": "YOGA", "product": "Yoga Matı" },
+    "rowing": { "term": "KÜREK", "product": "Kürek Paleti" },
+    "climbing": { "term": "TIRMANIŞ", "product": "Emniyet Kemeri" },
+    "skiing": { "term": "KAYAK", "product": "Kayak Botu" },
+    "ice-skating": { "term": "BUZ PATENİ", "product": "Buz Pateni" },
+    "archery": { "term": "OKÇULUK", "product": "Yay" },
+    "judo": { "term": "JUDO", "product": "Judo Kemeri" }
+  },
+  "tech": {
+    "kinegrip": {
+      "claim": "Islakta da tutar.",
+      "evidence": "Kauçuk taban dokusu, ıslak ve kuru zeminde test edildi."
+    },
+    "terracell": {
+      "claim": "Enerjiyi geri verir.",
+      "evidence": "Hücresel köpük yapısı darbeyi emer ve iter."
+    },
+    "hydroskin": {
+      "claim": "Suyu yarar.",
+      "evidence": "Pürüzsüz yüzey, sürtünmeyi azaltmak için dokundu."
+    },
+    "aeromesh": {
+      "claim": "Nefes alır.",
+      "evidence": "Delikli örgü, ısıyı dışarı atar."
+    }
+  },
+  "showcase": {
+    "football": {
+      "cleats": { "name": "Krampon", "description": "4 mm kauçuk taban, ıslak çimde test edildi." },
+      "ball": { "name": "Maç Topu", "description": "Termal yapıştırmalı yüzey, yağmurda su almaz." },
+      "jersey": { "name": "Forma", "description": "Delikli örgü kumaş, 90 dakika boyunca serin tutar." },
+      "shinGuards": { "name": "Tekmelik", "description": "Hücresel köpük dolgu, darbeyi emer." }
+    },
+    "athletics": {
+      "shoes": { "name": "Koşu Ayakkabısı", "description": "Hücresel köpük taban, her adımda enerjiyi geri verir." },
+      "spikes": { "name": "Sprint Kramponu", "description": "8 diken, ilk 30 metrede tam kavrama sağlar." },
+      "singlet": { "name": "Yarış Forması", "description": "150 gram, delikli örgü, terlemeyi dışarı atar." },
+      "baton": { "name": "Bayrak Değneği", "description": "Kauçuk dokulu yüzey, değişim anında kaymaz." }
+    },
+    "swimming": {
+      "suit": { "name": "Yarış Mayosu", "description": "Pürüzsüz kumaş, su direncini azaltmak için dokundu." },
+      "goggles": { "name": "Yüzücü Gözlüğü", "description": "Hidrodinamik profil, buğulanmaya karşı kaplamalı." },
+      "cap": { "name": "Bone", "description": "Tek parça döküm, saçı suya karşı düz tutar." },
+      "kickboard": { "name": "Çırpınma Tahtası", "description": "Hücresel köpük gövde, suyun üstünde taşır." }
+    }
   }
 }
