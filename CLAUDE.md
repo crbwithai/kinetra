@@ -39,8 +39,19 @@ bileşenler yalnızca değişken adını kullanır. Paletin sonradan değişebil
 | `--bg-dark` | `#17140F` | sıcak siyah, koyu bölüm zemini |
 | `--accent-deep` | `#0E8C80` | derin turkuaz, açık zeminde |
 | `--accent-bright` | `#25D3C0` | canlı turkuaz, koyu zeminde |
-| `--text-muted` | `#8A8175` | sıcak gri, ikincil metin |
+| `--text-muted-light` | `#746C62` | sıcak gri, ikincil metin — **açık zeminde** |
+| `--text-muted-dark` | `#8A8175` | sıcak gri, ikincil metin — **koyu zeminde** |
 | `--copper` | `#C97B3C` | opsiyonel, onay alınmadan kullanılmaz |
+
+**İkincil metin rengi zemine göre değişir.** Tek bir `--text-muted` tonu hem açık hem koyu
+zeminde WCAG AA'yı (küçük/gövde metin için 4.5:1) aynı anda karşılayamıyor — ölçüldü,
+matematiksel olarak da kanıtlandı (iki zeminin parlaklık aralıkları çakışmıyor). Bu yüzden
+ikiye bölündü:
+- `--text-muted-light` (`#746C62`) → `--bg-light` üzerinde **4.63:1** — AA geçer
+- `--text-muted-dark` (`#8A8175`, orijinal ton) → `--bg-dark` üzerinde **4.79:1** — AA geçer
+
+Bir bileşen hangi zeminde render ediliyorsa ikincil metin için o zeminin token'ı kullanılır;
+zemin değişince (açık↔koyu bölüm) token da değişir, karışık kullanılmaz.
 
 **Bölüm ritmi:** açık ve koyu bölümler dönüşümlü ilerler.
 **Aksan kullanımı:** sayfanın %1'inden azı. Çizgi, alt çizgi, aktif gösterge, odak halkası.
@@ -57,7 +68,7 @@ Başlıkta, butonda, ikon dolgusunda aksan rengi kullanılmaz.
 1. Dev başlık — ekran genişliğine göre akışkan
 2. Bölüm başlığı
 3. Gövde metni
-4. Küçük etiket — büyük harf, geniş harf aralığı, `--text-muted`
+4. Küçük etiket — büyük harf, geniş harf aralığı, `--text-muted-light`/`--text-muted-dark` (zemine göre)
 
 Sabit piksel boyut yerine akışkan ölçek kullanılır. Aynı ekranda dörtten fazla yazı boyutu bulunmaz.
 
@@ -140,7 +151,8 @@ Filigran dosyaya gömülür, CSS katmanı olarak eklenmez.
 
 ## 12. Erişilebilirlik
 
-- Metin/zemin kontrastı ölçülür, göz kararıyla geçilmez. `--text-muted` küçük metinde riskli, kontrol edilir.
+- Metin/zemin kontrastı ölçülür, göz kararıyla geçilmez. İkincil metin için bkz. §3 —
+  `--text-muted-light`/`--text-muted-dark` zemine göre doğru seçilmezse AA kontrastı kaybolur.
 - Klavye ile tüm site gezilebilir, odak halkası görünür (aksan rengi burada kullanılabilir).
 - Anlamlı HTML etiketleri kullanılır.
 

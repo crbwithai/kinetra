@@ -1,0 +1,35 @@
+/* CLAUDE.md §4 — dört seviyeli akışkan tipografi ölçeği.
+   Her seviye boyut + satır yüksekliği + harf aralığı + ağırlığı tek
+   `text-*` sınıfında taşır. Font ailesi ayrıdır — font-heading / font-body
+   sınıflarıyla birlikte kullanılır (örn. `text-display font-heading`).
+   clamp() değerleri 375px–1440px görüntü genişliği aralığında hesaplandı. */
+
+@theme {
+  --font-heading: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
+  --font-body: 'Manrope', ui-sans-serif, system-ui, sans-serif;
+
+  /* Dev başlık — hero, 40px → 96px */
+  --text-display: clamp(2.5rem, 1.2676rem + 0.3286vw, 6rem);
+  --text-display--line-height: 1.05;
+  --text-display--letter-spacing: -0.02em;
+  --text-display--font-weight: 700;
+
+  /* Bölüm başlığı — 24px → 40px */
+  --text-heading: clamp(1.5rem, 1.1479rem + 0.0939vw, 2.5rem);
+  --text-heading--line-height: 1.15;
+  --text-heading--letter-spacing: -0.01em;
+  --text-heading--font-weight: 500;
+
+  /* Gövde metni — 16px → 18px */
+  --text-body: clamp(1rem, 0.956rem + 0.0117vw, 1.125rem);
+  --text-body--line-height: 1.6;
+  --text-body--letter-spacing: 0.01em;
+  --text-body--font-weight: 400;
+
+  /* Küçük etiket — büyük harf, geniş harf aralığı; 11px → 12px.
+     uppercase ve renk (text-text-muted-light/-dark) ayrı sınıflarla eklenir. */
+  --text-label: clamp(0.6875rem, 0.6655rem + 0.0059vw, 0.75rem);
+  --text-label--line-height: 1.4;
+  --text-label--letter-spacing: 0.08em;
+  --text-label--font-weight: 500;
+}

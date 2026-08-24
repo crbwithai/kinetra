@@ -1,0 +1,13 @@
+/* CLAUDE.md §5 — 8'in katları boşluk ölçeği: 8·16·24·40·64·96·160.
+   Tailwind'in sayısal skalasına (p-4, gap-8...) dokunmuyor, yalnızca
+   isimli kısayollar ekliyor (p-xs, gap-lg, mt-3xl...). */
+
+@theme {
+  --spacing-xs: 8px;
+  --spacing-sm: 16px;
+  --spacing-md: 24px;
+  --spacing-lg: 40px;
+  --spacing-xl: 64px;
+  --spacing-2xl: 96px;
+  --spacing-3xl: 160px;
+}

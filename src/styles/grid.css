@@ -1,0 +1,10 @@
+/* CLAUDE.md §5 — masaüstü 12, tablet 6, mobil 4 sütun.
+   Mobil taban (prefiks yok), tablet/desktop adlandırılmış kırılma noktalarıyla.
+   Kullanım: grid-cols-4 tablet:grid-cols-6 desktop:grid-cols-12
+   Okunabilirlik sınırı için Tailwind'in hazır max-w-prose (65ch) sınıfı kullanılır,
+   ayrı bir token gerekmiyor. */
+
+@theme {
+  --breakpoint-tablet: 48rem; /* 768px */
+  --breakpoint-desktop: 64rem; /* 1024px */
+}

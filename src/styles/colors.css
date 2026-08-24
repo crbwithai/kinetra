@@ -1,0 +1,26 @@
+/* CLAUDE.md §3 — marka paleti. Hex kodları yalnızca burada yazılır,
+   bileşenler hiçbir zaman doğrudan hex kullanmaz. */
+
+:root {
+  --bg-light: #f6f2ec;
+  --bg-dark: #17140f;
+  --accent-deep: #0e8c80;
+  --accent-bright: #25d3c0;
+  --copper: #c97b3c; /* tanımlı, henüz kullanılmıyor — onay alınmadan devreye girmez */
+
+  /* --text-muted tek tonla hem açık hem koyu zeminde WCAG AA'yı (4.5:1)
+     aynı anda karşılayamıyor — matematiksel olarak kanıtlandı, bu yüzden
+     zemine göre ikiye bölündü (kullanıcı onayı alındı). Bkz. CLAUDE.md §3/§12. */
+  --text-muted-light: #746c62; /* bg-light üzerinde 4.63:1 — AA geçer */
+  --text-muted-dark: #8a8175; /* bg-dark üzerinde 4.79:1 — AA geçer (orijinal ton) */
+}
+
+@theme {
+  --color-bg-light: var(--bg-light);
+  --color-bg-dark: var(--bg-dark);
+  --color-accent-deep: var(--accent-deep);
+  --color-accent-bright: var(--accent-bright);
+  --color-copper: var(--copper);
+  --color-text-muted-light: var(--text-muted-light);
+  --color-text-muted-dark: var(--text-muted-dark);
+}

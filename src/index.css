@@ -1,10 +1,9 @@
 @import 'tailwindcss';
 @import './styles/fonts.css';
-
-@theme {
-  --font-heading: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
-  --font-body: 'Manrope', ui-sans-serif, system-ui, sans-serif;
-}
+@import './styles/colors.css';
+@import './styles/type.css';
+@import './styles/spacing.css';
+@import './styles/grid.css';
 
 :root {
   --text: #6b6375;
