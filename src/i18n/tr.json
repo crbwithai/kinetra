@@ -6,10 +6,22 @@
     }
   },
   "nav": {
-    "langSwitch": "EN"
+    "langSwitch": "EN",
+    "mainLabel": "Ana menü",
+    "openMenu": "Menüyü aç",
+    "closeMenu": "Menüyü kapat",
+    "branslar": "Branşlar",
+    "vitrin": "Vitrin",
+    "teknoloji": "Teknoloji",
+    "hakkinda": "Hakkında",
+    "sepet": "Sepet"
   },
   "hero": {
     "baslik": "Burası hero gelecek."
+  },
+  "footer": {
+    "tagline": "20 branş için tasarlanmış performans ekipmanı.",
+    "copyright": "© {year} KINETRA. Tüm hakları saklıdır."
   },
   "notFound": {
     "baslik": "Sayfa bulunamadı",

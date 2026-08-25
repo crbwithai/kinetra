@@ -6,10 +6,22 @@
     }
   },
   "nav": {
-    "langSwitch": "TR"
+    "langSwitch": "TR",
+    "mainLabel": "Main menu",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "branslar": "Branches",
+    "vitrin": "Showcase",
+    "teknoloji": "Technology",
+    "hakkinda": "About",
+    "sepet": "Cart"
   },
   "hero": {
     "baslik": "Hero goes here."
+  },
+  "footer": {
+    "tagline": "Performance gear designed for 20 sports.",
+    "copyright": "© {year} KINETRA. All rights reserved."
   },
   "notFound": {
     "baslik": "Page not found",
