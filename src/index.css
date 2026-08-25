@@ -20,3 +20,22 @@ body {
 p {
   margin: 0;
 }
+
+/* Hero'nun kaydırma göstergesi (src/sections/Hero.tsx) — basit, kaydırmadan
+   bağımsız bir döngü olduğu için Framer Motion değil, saf CSS (CLAUDE.md §10). */
+@keyframes scroll-hint {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(80px);
+    opacity: 0;
+  }
+}

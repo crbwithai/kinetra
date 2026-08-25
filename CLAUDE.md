@@ -100,6 +100,17 @@ Bölüm sırası:
 Cam her zaman koyu tonlu olur — açık bölümlerin üstünde de okunur kalması için.
 Bulanıklık efekti yalnızca kaydırma durumunda devrededir, sayfa tepedeyken kapalıdır.
 
+**Menü metin/logo rengi zemine göre uyum sağlar:** sayfa en üstteyken (cam kapalı, şeffaf) koyu
+renkte — altındaki açık zeminde (örn. Hero) okunsun diye. Kaydırma başlayıp cam devreye girince
+açık renğe döner — koyu camın üstünde okunsun diye. Bu iki durum arasındaki geçiş, cam efektinin
+kendi geçişiyle aynı anda ve aynı sürede olur (tek `transition` altında birlikte yönetilir, ayrı
+hızlarda değil). Logo `currentColor` kullandığı için bu geçişe otomatik uyar, ayrıca elle
+renklendirilmez. Mobil menü tetikleyicisi (hamburger) de aynı kurala tabidir.
+
+Şimdilik yalnızca "tepede mi / kaydırılmış mı" ayrımı var — her bölümün kendi zeminini algılayıp
+ona göre karar veren bir sistem yok. Bölümler ileride tam olarak inşa edilince (açık/koyu
+dönüşümlü, §3) bu iki durumluk kural yeniden değerlendirilebilir.
+
 ## 7. Teknik yığın
 
 React · Vite · TypeScript · Tailwind CSS · React Router · Framer Motion

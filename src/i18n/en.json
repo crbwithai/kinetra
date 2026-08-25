@@ -17,7 +17,12 @@
     "sepet": "Cart"
   },
   "hero": {
-    "baslik": "Hero goes here."
+    "kunye": "20 SPORTS",
+    "baslikSatir1": "Every sport has",
+    "baslikSatir2": "its own equipment.",
+    "destek": "20 branches, each with its own signature gear.",
+    "linkBranslar": "See the branches",
+    "linkTeknoloji": "Technology"
   },
   "footer": {
     "tagline": "Performance gear designed for 20 sports.",

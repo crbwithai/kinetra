@@ -61,7 +61,7 @@ export default function MobileMenu({ homeHref }: { homeHref: string }) {
         onClick={toggle}
         aria-expanded={open}
         aria-label={open ? t('nav.closeMenu') : t('nav.openMenu')}
-        className="rounded-none p-sm text-bg-light outline-none tablet:hidden focus-visible:outline-2 focus-visible:outline-accent-bright focus-visible:outline-offset-2"
+        className="rounded-none p-sm outline-none tablet:hidden focus-visible:outline-2 focus-visible:outline-accent-bright focus-visible:outline-offset-2"
       >
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
           {open ? (
