@@ -81,7 +81,7 @@
       "cleats": { "name": "Cleats", "description": "4mm rubber outsole, tested on wet grass." },
       "ball": { "name": "Match Ball", "description": "Thermally bonded surface, stays dry in the rain." },
       "jersey": { "name": "Jersey", "description": "Perforated knit fabric, stays cool for 90 minutes." },
-      "shinGuards": { "name": "Shin Guards", "description": "Cellular foam padding absorbs impact." }
+      "goalkeeperGloves": { "name": "Goalkeeper Gloves", "description": "Rubber palm grip, improves hold on a wet ball." }
     },
     "athletics": {
       "shoes": { "name": "Running Shoes", "description": "Cellular foam sole returns energy with every step." },

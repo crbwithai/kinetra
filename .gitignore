@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# Ham ürün görselleri — yalnızca dönüştürme betiğinin girdisi, repoya girmez (CLAUDE.md §11)
+raw-media
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

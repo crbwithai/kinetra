@@ -81,7 +81,7 @@
       "cleats": { "name": "Krampon", "description": "4 mm kauçuk taban, ıslak çimde test edildi." },
       "ball": { "name": "Maç Topu", "description": "Termal yapıştırmalı yüzey, yağmurda su almaz." },
       "jersey": { "name": "Forma", "description": "Delikli örgü kumaş, 90 dakika boyunca serin tutar." },
-      "shinGuards": { "name": "Tekmelik", "description": "Hücresel köpük dolgu, darbeyi emer." }
+      "goalkeeperGloves": { "name": "Kaleci Eldiveni", "description": "Kauçuk avuç içi, ıslak topta kavramayı artırır." }
     },
     "athletics": {
       "shoes": { "name": "Koşu Ayakkabısı", "description": "Hücresel köpük taban, her adımda enerjiyi geri verir." },
