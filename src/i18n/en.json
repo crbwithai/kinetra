@@ -24,6 +24,10 @@
     "linkBranslar": "See the branches",
     "linkTeknoloji": "Technology"
   },
+  "branchWall": {
+    "baslik": "20 sports, 20 signature products.",
+    "giris": "Each card shows its sport's most-used piece of equipment."
+  },
   "footer": {
     "tagline": "Performance gear designed for 20 sports.",
     "copyright": "© {year} KINETRA. All rights reserved."

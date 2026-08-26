@@ -24,6 +24,10 @@
     "linkBranslar": "Branşları gör",
     "linkTeknoloji": "Teknoloji"
   },
+  "branchWall": {
+    "baslik": "20 branş, 20 imza ürün.",
+    "giris": "Her kart kendi branşının en çok kullanılan ekipmanını gösterir."
+  },
   "footer": {
     "tagline": "20 branş için tasarlanmış performans ekipmanı.",
     "copyright": "© {year} KINETRA. Tüm hakları saklıdır."

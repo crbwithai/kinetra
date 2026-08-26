@@ -1,11 +1,15 @@
 import { NAV_ITEMS } from '../components/navItems'
 import { useLang } from '../i18n/LangContext'
 import { useSeo } from '../i18n/useSeo'
+import BranchWall from '../sections/BranchWall'
 import Hero from '../sections/Hero'
 
-// GEÇİCİ — Hero dışındaki yer tutucu bölümler, sayfayı kaydırılabilir kılmak
-// ve header'ın hem açık hem koyu zeminde okunur kaldığını test etmek için tam
-// ekran yükseklik + dönüşümlü zemin alıyor. Gerçek bölümler gelince kaldırılacak.
+const REMAINING_PLACEHOLDERS = NAV_ITEMS.filter((item) => item.id !== 'branslar')
+
+// GEÇİCİ — Hero ve BranchWall dışındaki yer tutucu bölümler, sayfayı
+// kaydırılabilir kılmak ve header'ın hem açık hem koyu zeminde okunur
+// kaldığını test etmek için tam ekran yükseklik + dönüşümlü zemin alıyor.
+// Gerçek bölümler gelince kaldırılacak.
 export default function Home() {
   const { t } = useLang()
   useSeo('home')
@@ -13,9 +17,10 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <BranchWall />
 
-      {NAV_ITEMS.map((item, i) => {
-        const isDark = i % 2 === 0
+      {REMAINING_PLACEHOLDERS.map((item, i) => {
+        const isDark = i % 2 === 1
         return (
           <section
             key={item.id}
