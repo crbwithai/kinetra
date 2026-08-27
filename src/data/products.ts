@@ -59,7 +59,9 @@ export interface DeepShowcase {
 
 export interface Technology {
   id: TechId
+  number: string // '01'..'04'
   name: string // özel isim, çevrilmez (KINEGRIP, TERRACELL, HYDROSKIN, AEROMESH)
+  termKey: string // künye TR/EN terim çifti — Branch.termKey ile aynı desen
   claimKey: string
   evidenceKey: string
 }
@@ -351,25 +353,33 @@ export const DEEP_SHOWCASES: Record<DeepShowcaseBranchId, DeepShowcase> = {
 export const TECHNOLOGIES: Record<TechId, Technology> = {
   kinegrip: {
     id: 'kinegrip',
+    number: '01',
     name: 'KINEGRIP',
+    termKey: 'tech.kinegrip.term',
     claimKey: 'tech.kinegrip.claim',
     evidenceKey: 'tech.kinegrip.evidence',
   },
   terracell: {
     id: 'terracell',
+    number: '02',
     name: 'TERRACELL',
+    termKey: 'tech.terracell.term',
     claimKey: 'tech.terracell.claim',
     evidenceKey: 'tech.terracell.evidence',
   },
   hydroskin: {
     id: 'hydroskin',
+    number: '03',
     name: 'HYDROSKIN',
+    termKey: 'tech.hydroskin.term',
     claimKey: 'tech.hydroskin.claim',
     evidenceKey: 'tech.hydroskin.evidence',
   },
   aeromesh: {
     id: 'aeromesh',
+    number: '04',
     name: 'AEROMESH',
+    termKey: 'tech.aeromesh.term',
     claimKey: 'tech.aeromesh.claim',
     evidenceKey: 'tech.aeromesh.evidence',
   },

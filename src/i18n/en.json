@@ -32,6 +32,10 @@
     "baslik": "Three sports, in depth.",
     "giris": "Football, athletics, and swimming — four signature products each."
   },
+  "teknoloji": {
+    "baslik": "Four technologies, named.",
+    "giris": "Every product carries a proven technology."
+  },
   "footer": {
     "tagline": "Performance gear designed for 20 sports.",
     "copyright": "© {year} KINETRA. All rights reserved."
@@ -64,18 +68,22 @@
   },
   "tech": {
     "kinegrip": {
+      "term": "GRIP",
       "claim": "Holds when wet.",
       "evidence": "Rubber outsole texture, tested on wet and dry ground."
     },
     "terracell": {
+      "term": "ENERGY",
       "claim": "Returns the energy.",
       "evidence": "Cellular foam structure absorbs impact and pushes back."
     },
     "hydroskin": {
+      "term": "DRAG",
       "claim": "Cuts through water.",
       "evidence": "Smooth surface, woven to reduce drag."
     },
     "aeromesh": {
+      "term": "BREATH",
       "claim": "Breathes.",
       "evidence": "Perforated knit releases heat."
     }

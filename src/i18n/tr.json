@@ -32,6 +32,10 @@
     "baslik": "Üç branş, derinlemesine.",
     "giris": "Futbol, atletizm ve yüzme — her birinin dört imza ürünü."
   },
+  "teknoloji": {
+    "baslik": "Dört teknoloji, adı konmuş.",
+    "giris": "Her ürün, kanıtlanmış bir teknolojiyle gelir."
+  },
   "footer": {
     "tagline": "20 branş için tasarlanmış performans ekipmanı.",
     "copyright": "© {year} KINETRA. Tüm hakları saklıdır."
@@ -64,18 +68,22 @@
   },
   "tech": {
     "kinegrip": {
+      "term": "KAVRAMA",
       "claim": "Islakta da tutar.",
       "evidence": "Kauçuk taban dokusu, ıslak ve kuru zeminde test edildi."
     },
     "terracell": {
+      "term": "ENERJİ",
       "claim": "Enerjiyi geri verir.",
       "evidence": "Hücresel köpük yapısı darbeyi emer ve iter."
     },
     "hydroskin": {
+      "term": "SÜRTÜNME",
       "claim": "Suyu yarar.",
       "evidence": "Pürüzsüz yüzey, sürtünmeyi azaltmak için dokundu."
     },
     "aeromesh": {
+      "term": "NEFES",
       "claim": "Nefes alır.",
       "evidence": "Delikli örgü, ısıyı dışarı atar."
     }

@@ -4,8 +4,9 @@ import { useSeo } from '../i18n/useSeo'
 import BranchWall from '../sections/BranchWall'
 import DeepShowcase from '../sections/DeepShowcase'
 import Hero from '../sections/Hero'
+import Teknoloji from '../sections/Teknoloji'
 
-const DONE_IDS = new Set(['branslar', 'vitrin'])
+const DONE_IDS = new Set(['branslar', 'vitrin', 'teknoloji'])
 const REMAINING_PLACEHOLDERS = NAV_ITEMS.filter((item) => !DONE_IDS.has(item.id))
 
 // GEÇİCİ — Hero, BranchWall ve DeepShowcase dışındaki yer tutucu bölümler,
@@ -21,9 +22,10 @@ export default function Home() {
       <Hero />
       <BranchWall />
       <DeepShowcase />
+      <Teknoloji />
 
       {REMAINING_PLACEHOLDERS.map((item, i) => {
-        const isDark = i % 2 === 0
+        const isDark = i % 2 !== 0
         return (
           <section
             key={item.id}
