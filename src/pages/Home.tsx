@@ -7,7 +7,7 @@ import Hero from '../sections/Hero'
 import Istatistikler from '../sections/Istatistikler'
 import Teknoloji from '../sections/Teknoloji'
 
-const DONE_IDS = new Set(['branslar', 'vitrin', 'teknoloji'])
+const DONE_IDS = new Set(['branslar', 'vitrin', 'teknoloji', 'sepet'])
 const REMAINING_PLACEHOLDERS = NAV_ITEMS.filter((item) => !DONE_IDS.has(item.id))
 
 // GEÇİCİ — Hero, BranchWall ve DeepShowcase dışındaki yer tutucu bölümler,

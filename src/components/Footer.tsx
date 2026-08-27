@@ -1,12 +1,14 @@
 import { Link } from 'react-router'
 import { useLang } from '../i18n/LangContext'
 import { pagePath } from '../i18n/pages'
+import { useCart } from '../lib/CartContext'
 import LangSwitcher from './LangSwitcher'
 import { Logo } from './Logo'
 import { NAV_ITEMS } from './navItems'
 
 export default function Footer() {
   const { lang, t } = useLang()
+  const { open: openCart } = useCart()
   const homeHref = pagePath('home', lang)
   const year = new Date().getFullYear()
 
@@ -23,12 +25,22 @@ export default function Footer() {
         <ul className="flex flex-col gap-sm tablet:flex-row tablet:gap-lg">
           {NAV_ITEMS.map((item) => (
             <li key={item.id}>
-              <Link
-                to={`${homeHref}#${item.id}`}
-                className="text-label uppercase outline-none focus-visible:outline-2 focus-visible:outline-accent-bright focus-visible:outline-offset-4"
-              >
-                {t(item.labelKey)}
-              </Link>
+              {item.id === 'sepet' ? (
+                <button
+                  type="button"
+                  onClick={openCart}
+                  className="text-label uppercase outline-none focus-visible:outline-2 focus-visible:outline-accent-bright focus-visible:outline-offset-4"
+                >
+                  {t(item.labelKey)}
+                </button>
+              ) : (
+                <Link
+                  to={`${homeHref}#${item.id}`}
+                  className="text-label uppercase outline-none focus-visible:outline-2 focus-visible:outline-accent-bright focus-visible:outline-offset-4"
+                >
+                  {t(item.labelKey)}
+                </Link>
+              )}
             </li>
           ))}
         </ul>

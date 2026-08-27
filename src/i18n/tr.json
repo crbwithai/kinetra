@@ -42,6 +42,16 @@
     "imzaUrun": "İmza Ürün",
     "saatTest": "Saat Test"
   },
+  "cart": {
+    "addToCart": "Sepete ekle",
+    "openCart": "Sepeti aç",
+    "close": "Sepeti kapat",
+    "empty": "Sepetin boş.",
+    "increase": "Artır",
+    "decrease": "Azalt",
+    "remove": "Kaldır",
+    "total": "Toplam"
+  },
   "footer": {
     "tagline": "20 branş için tasarlanmış performans ekipmanı.",
     "copyright": "© {year} KINETRA. Tüm hakları saklıdır."

@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router'
 import { useLang } from '../i18n/LangContext'
 import LangSwitcher from './LangSwitcher'
-import { NAV_ITEMS } from './navItems'
+import { TEXT_NAV_ITEMS } from './navItems'
 
 export default function MobileMenu({ homeHref }: { homeHref: string }) {
   const { t } = useLang()
@@ -77,7 +77,7 @@ export default function MobileMenu({ homeHref }: { homeHref: string }) {
         className="fixed inset-0 m-0 hidden h-dvh max-h-none w-full max-w-none border-none bg-bg-dark p-lg text-bg-light backdrop:bg-bg-dark/60 open:flex open:flex-col open:items-center open:justify-center open:gap-lg starting:-translate-y-2 starting:opacity-0 motion-reduce:transition-none motion-reduce:starting:translate-y-0 transition-all duration-200"
       >
         <nav className="flex flex-col items-center gap-lg" aria-label={t('nav.mainLabel')}>
-          {NAV_ITEMS.map((item) => (
+          {TEXT_NAV_ITEMS.map((item) => (
             <Link
               key={item.id}
               to={`${homeHref}#${item.id}`}

@@ -1,14 +1,24 @@
 import { motion, useReducedMotion } from 'framer-motion'
-import type { ShowcaseProduct } from '../data/products'
+import type { DeepShowcaseBranchId, ShowcaseProduct } from '../data/products'
 import { TECHNOLOGIES } from '../data/products'
 import { useLang } from '../i18n/LangContext'
 import { FADE_UP } from '../lib/fadeUpVariant'
 import { formatPrice } from '../lib/formatPrice'
+import { useCart } from '../lib/CartContext'
 import ResponsiveImage from './ResponsiveImage'
 
-export default function ShowcaseProductCard({ product, delay }: { product: ShowcaseProduct; delay: number }) {
+export default function ShowcaseProductCard({
+  product,
+  branchId,
+  delay,
+}: {
+  product: ShowcaseProduct
+  branchId: DeepShowcaseBranchId
+  delay: number
+}) {
   const { lang, t } = useLang()
   const shouldReduceMotion = useReducedMotion()
+  const { addItem } = useCart()
   const tech = TECHNOLOGIES[product.techId]
 
   return (
@@ -37,6 +47,13 @@ export default function ShowcaseProductCard({ product, delay }: { product: Showc
         <span className="text-text-muted-light">{t(tech.claimKey)}</span>
       </p>
       <p className="mt-1 text-body font-body">{formatPrice(product.price.amount, lang)}</p>
+      <button
+        type="button"
+        onClick={() => addItem(branchId, product.id)}
+        className="mt-sm w-full border border-bg-dark px-md py-xs text-label uppercase text-bg-dark transition-colors duration-200 hover:bg-bg-dark hover:text-bg-light motion-reduce:transition-none"
+      >
+        {t('cart.addToCart')}
+      </button>
     </motion.article>
   )
 }

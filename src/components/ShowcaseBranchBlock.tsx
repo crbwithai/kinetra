@@ -19,7 +19,12 @@ export default function ShowcaseBranchBlock({ showcase }: { showcase: DeepShowca
 
       <div className="grid grid-cols-1 gap-md tablet:grid-cols-2 desktop:grid-cols-4">
         {showcase.products.map((product, i) => (
-          <ShowcaseProductCard key={product.id} product={product} delay={(i % 4) * 0.05} />
+          <ShowcaseProductCard
+            key={product.id}
+            product={product}
+            branchId={showcase.branchId}
+            delay={(i % 4) * 0.05}
+          />
         ))}
       </div>
     </div>

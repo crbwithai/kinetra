@@ -2,10 +2,11 @@ import { Link } from 'react-router'
 import { useLang } from '../i18n/LangContext'
 import { pagePath } from '../i18n/pages'
 import { useScrolled } from '../lib/useScrolled'
+import CartButton from './CartButton'
 import LangSwitcher from './LangSwitcher'
 import { Logo } from './Logo'
 import MobileMenu from './MobileMenu'
-import { NAV_ITEMS } from './navItems'
+import { TEXT_NAV_ITEMS } from './navItems'
 
 export default function Header() {
   const { lang, t } = useLang()
@@ -24,7 +25,7 @@ export default function Header() {
         </Link>
 
         <nav className="hidden items-center gap-lg tablet:flex" aria-label={t('nav.mainLabel')}>
-          {NAV_ITEMS.map((item) => (
+          {TEXT_NAV_ITEMS.map((item) => (
             <Link
               key={item.id}
               to={`${homeHref}#${item.id}`}
@@ -36,6 +37,7 @@ export default function Header() {
         </nav>
 
         <div className="flex items-center gap-md">
+          <CartButton />
           <div className="hidden tablet:block">
             <LangSwitcher />
           </div>

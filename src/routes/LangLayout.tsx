@@ -1,4 +1,5 @@
 import { Outlet } from 'react-router'
+import CartDrawer from '../components/CartDrawer'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import { LangContext } from '../i18n/LangContext'
@@ -18,6 +19,7 @@ export default function LangLayout({ lang }: { lang: Lang }) {
         </main>
         <Footer />
       </div>
+      <CartDrawer />
     </LangContext.Provider>
   )
 }

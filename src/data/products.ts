@@ -350,6 +350,10 @@ export const DEEP_SHOWCASES: Record<DeepShowcaseBranchId, DeepShowcase> = {
   },
 }
 
+export function findShowcaseProduct(branchId: DeepShowcaseBranchId, productId: string): ShowcaseProduct | undefined {
+  return DEEP_SHOWCASES[branchId]?.products.find((product) => product.id === productId)
+}
+
 export const TECHNOLOGIES: Record<TechId, Technology> = {
   kinegrip: {
     id: 'kinegrip',

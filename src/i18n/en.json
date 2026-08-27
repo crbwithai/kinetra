@@ -42,6 +42,16 @@
     "imzaUrun": "Signature Products",
     "saatTest": "Hours Tested"
   },
+  "cart": {
+    "addToCart": "Add to cart",
+    "openCart": "Open cart",
+    "close": "Close cart",
+    "empty": "Your cart is empty.",
+    "increase": "Increase",
+    "decrease": "Decrease",
+    "remove": "Remove",
+    "total": "Total"
+  },
   "footer": {
     "tagline": "Performance gear designed for 20 sports.",
     "copyright": "© {year} KINETRA. All rights reserved."
