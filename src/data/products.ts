@@ -44,6 +44,8 @@ export interface ShowcaseProduct {
   id: string
   nameKey: string
   descriptionKey: string
+  altKey: string // görsel alt metni — işlevsel/betimleyici, sözlükten
+  hasImage: boolean // gerçek görseli üretilmiş mi (false ise yer tutucu gösterilir)
   price: Price
   techId: TechId
   image: string
@@ -51,6 +53,7 @@ export interface ShowcaseProduct {
 
 export interface DeepShowcase {
   branchId: DeepShowcaseBranchId
+  blurbKey: string // künyenin yanında görünen kısa branş cümlesi
   products: [ShowcaseProduct, ShowcaseProduct, ShowcaseProduct, ShowcaseProduct]
 }
 
@@ -207,11 +210,14 @@ export const BRANCHES: Record<BranchId, Branch> = {
 export const DEEP_SHOWCASES: Record<DeepShowcaseBranchId, DeepShowcase> = {
   football: {
     branchId: 'football',
+    blurbKey: 'showcase.football.blurb',
     products: [
       {
         id: 'cleats',
         nameKey: 'showcase.football.cleats.name',
         descriptionKey: 'showcase.football.cleats.description',
+        altKey: 'showcase.football.cleats.alt',
+        hasImage: false,
         price: { amount: 2499, currency: 'TRY' },
         techId: 'kinegrip',
         image: '/products/football/cleats.webp',
@@ -220,6 +226,8 @@ export const DEEP_SHOWCASES: Record<DeepShowcaseBranchId, DeepShowcase> = {
         id: 'ball',
         nameKey: 'showcase.football.ball.name',
         descriptionKey: 'showcase.football.ball.description',
+        altKey: 'showcase.football.ball.alt',
+        hasImage: true,
         price: { amount: 899, currency: 'TRY' },
         techId: 'terracell',
         image: '/products/football/ball.webp',
@@ -228,6 +236,8 @@ export const DEEP_SHOWCASES: Record<DeepShowcaseBranchId, DeepShowcase> = {
         id: 'jersey',
         nameKey: 'showcase.football.jersey.name',
         descriptionKey: 'showcase.football.jersey.description',
+        altKey: 'showcase.football.jersey.alt',
+        hasImage: false,
         price: { amount: 799, currency: 'TRY' },
         techId: 'aeromesh',
         image: '/products/football/jersey.webp',
@@ -236,6 +246,8 @@ export const DEEP_SHOWCASES: Record<DeepShowcaseBranchId, DeepShowcase> = {
         id: 'goalkeeperGloves',
         nameKey: 'showcase.football.goalkeeperGloves.name',
         descriptionKey: 'showcase.football.goalkeeperGloves.description',
+        altKey: 'showcase.football.goalkeeperGloves.alt',
+        hasImage: true,
         price: { amount: 599, currency: 'TRY' },
         techId: 'kinegrip',
         image: '/products/football/goalkeeper-gloves.webp',
@@ -244,11 +256,14 @@ export const DEEP_SHOWCASES: Record<DeepShowcaseBranchId, DeepShowcase> = {
   },
   athletics: {
     branchId: 'athletics',
+    blurbKey: 'showcase.athletics.blurb',
     products: [
       {
         id: 'shoes',
         nameKey: 'showcase.athletics.shoes.name',
         descriptionKey: 'showcase.athletics.shoes.description',
+        altKey: 'showcase.athletics.shoes.alt',
+        hasImage: false,
         price: { amount: 2299, currency: 'TRY' },
         techId: 'terracell',
         image: '/products/athletics/shoes.webp',
@@ -257,6 +272,8 @@ export const DEEP_SHOWCASES: Record<DeepShowcaseBranchId, DeepShowcase> = {
         id: 'spikes',
         nameKey: 'showcase.athletics.spikes.name',
         descriptionKey: 'showcase.athletics.spikes.description',
+        altKey: 'showcase.athletics.spikes.alt',
+        hasImage: true,
         price: { amount: 1899, currency: 'TRY' },
         techId: 'kinegrip',
         image: '/products/athletics/spikes.webp',
@@ -265,6 +282,8 @@ export const DEEP_SHOWCASES: Record<DeepShowcaseBranchId, DeepShowcase> = {
         id: 'singlet',
         nameKey: 'showcase.athletics.singlet.name',
         descriptionKey: 'showcase.athletics.singlet.description',
+        altKey: 'showcase.athletics.singlet.alt',
+        hasImage: false,
         price: { amount: 599, currency: 'TRY' },
         techId: 'aeromesh',
         image: '/products/athletics/singlet.webp',
@@ -273,6 +292,8 @@ export const DEEP_SHOWCASES: Record<DeepShowcaseBranchId, DeepShowcase> = {
         id: 'baton',
         nameKey: 'showcase.athletics.baton.name',
         descriptionKey: 'showcase.athletics.baton.description',
+        altKey: 'showcase.athletics.baton.alt',
+        hasImage: false,
         price: { amount: 249, currency: 'TRY' },
         techId: 'kinegrip',
         image: '/products/athletics/baton.webp',
@@ -281,11 +302,14 @@ export const DEEP_SHOWCASES: Record<DeepShowcaseBranchId, DeepShowcase> = {
   },
   swimming: {
     branchId: 'swimming',
+    blurbKey: 'showcase.swimming.blurb',
     products: [
       {
         id: 'suit',
         nameKey: 'showcase.swimming.suit.name',
         descriptionKey: 'showcase.swimming.suit.description',
+        altKey: 'showcase.swimming.suit.alt',
+        hasImage: false,
         price: { amount: 1299, currency: 'TRY' },
         techId: 'hydroskin',
         image: '/products/swimming/suit.webp',
@@ -294,6 +318,8 @@ export const DEEP_SHOWCASES: Record<DeepShowcaseBranchId, DeepShowcase> = {
         id: 'goggles',
         nameKey: 'showcase.swimming.goggles.name',
         descriptionKey: 'showcase.swimming.goggles.description',
+        altKey: 'showcase.swimming.goggles.alt',
+        hasImage: true,
         price: { amount: 449, currency: 'TRY' },
         techId: 'hydroskin',
         image: '/products/swimming/goggles.webp',
@@ -302,6 +328,8 @@ export const DEEP_SHOWCASES: Record<DeepShowcaseBranchId, DeepShowcase> = {
         id: 'cap',
         nameKey: 'showcase.swimming.cap.name',
         descriptionKey: 'showcase.swimming.cap.description',
+        altKey: 'showcase.swimming.cap.alt',
+        hasImage: false,
         price: { amount: 129, currency: 'TRY' },
         techId: 'hydroskin',
         image: '/products/swimming/cap.webp',
@@ -310,6 +338,8 @@ export const DEEP_SHOWCASES: Record<DeepShowcaseBranchId, DeepShowcase> = {
         id: 'kickboard',
         nameKey: 'showcase.swimming.kickboard.name',
         descriptionKey: 'showcase.swimming.kickboard.description',
+        altKey: 'showcase.swimming.kickboard.alt',
+        hasImage: false,
         price: { amount: 349, currency: 'TRY' },
         techId: 'terracell',
         image: '/products/swimming/kickboard.webp',

@@ -2,11 +2,7 @@ import { motion, useReducedMotion } from 'framer-motion'
 import type { Branch } from '../data/products'
 import { useLang } from '../i18n/LangContext'
 import { translate } from '../i18n/translate'
-
-const FADE_UP = {
-  hidden: { opacity: 0, y: 16 },
-  visible: { opacity: 1, y: 0 },
-}
+import { FADE_UP } from '../lib/fadeUpVariant'
 
 // Henüz bir bağlantı değil — derin vitrin sayfaları gelene kadar tıklanamaz,
 // sadece görsel olarak "canlı" (hover tepkisi var). Bağlantıya çevrilince

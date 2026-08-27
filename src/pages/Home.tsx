@@ -2,12 +2,14 @@ import { NAV_ITEMS } from '../components/navItems'
 import { useLang } from '../i18n/LangContext'
 import { useSeo } from '../i18n/useSeo'
 import BranchWall from '../sections/BranchWall'
+import DeepShowcase from '../sections/DeepShowcase'
 import Hero from '../sections/Hero'
 
-const REMAINING_PLACEHOLDERS = NAV_ITEMS.filter((item) => item.id !== 'branslar')
+const DONE_IDS = new Set(['branslar', 'vitrin'])
+const REMAINING_PLACEHOLDERS = NAV_ITEMS.filter((item) => !DONE_IDS.has(item.id))
 
-// GEÇİCİ — Hero ve BranchWall dışındaki yer tutucu bölümler, sayfayı
-// kaydırılabilir kılmak ve header'ın hem açık hem koyu zeminde okunur
+// GEÇİCİ — Hero, BranchWall ve DeepShowcase dışındaki yer tutucu bölümler,
+// sayfayı kaydırılabilir kılmak ve header'ın hem açık hem koyu zeminde okunur
 // kaldığını test etmek için tam ekran yükseklik + dönüşümlü zemin alıyor.
 // Gerçek bölümler gelince kaldırılacak.
 export default function Home() {
@@ -18,9 +20,10 @@ export default function Home() {
     <>
       <Hero />
       <BranchWall />
+      <DeepShowcase />
 
       {REMAINING_PLACEHOLDERS.map((item, i) => {
-        const isDark = i % 2 === 1
+        const isDark = i % 2 === 0
         return (
           <section
             key={item.id}

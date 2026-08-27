@@ -28,6 +28,10 @@
     "baslik": "20 sports, 20 signature products.",
     "giris": "Each card shows its sport's most-used piece of equipment."
   },
+  "deepShowcase": {
+    "baslik": "Three sports, in depth.",
+    "giris": "Football, athletics, and swimming — four signature products each."
+  },
   "footer": {
     "tagline": "Performance gear designed for 20 sports.",
     "copyright": "© {year} KINETRA. All rights reserved."
@@ -78,22 +82,73 @@
   },
   "showcase": {
     "football": {
-      "cleats": { "name": "Cleats", "description": "4mm rubber outsole, tested on wet grass." },
-      "ball": { "name": "Match Ball", "description": "Thermally bonded surface, stays dry in the rain." },
-      "jersey": { "name": "Jersey", "description": "Perforated knit fabric, stays cool for 90 minutes." },
-      "goalkeeperGloves": { "name": "Goalkeeper Gloves", "description": "Rubber palm grip, improves hold on a wet ball." }
+      "blurb": "The same performance for 90 minutes.",
+      "cleats": {
+        "name": "Cleats",
+        "description": "4mm rubber outsole, tested on wet grass.",
+        "alt": "Football cleats"
+      },
+      "ball": {
+        "name": "Match Ball",
+        "description": "Thermally bonded surface, stays dry in the rain.",
+        "alt": "Black, white, and teal patterned football"
+      },
+      "jersey": {
+        "name": "Jersey",
+        "description": "Perforated knit fabric, stays cool for 90 minutes.",
+        "alt": "Football jersey"
+      },
+      "goalkeeperGloves": {
+        "name": "Goalkeeper Gloves",
+        "description": "Rubber palm grip, improves hold on a wet ball.",
+        "alt": "Black and white goalkeeper glove with a rubber palm"
+      }
     },
     "athletics": {
-      "shoes": { "name": "Running Shoes", "description": "Cellular foam sole returns energy with every step." },
-      "spikes": { "name": "Sprint Spikes", "description": "8 pins, full grip in the first 30 meters." },
-      "singlet": { "name": "Race Singlet", "description": "150 grams, perforated knit, wicks sweat away." },
-      "baton": { "name": "Relay Baton", "description": "Textured rubber surface, won't slip during the handoff." }
+      "blurb": "Energy returns with every step.",
+      "shoes": {
+        "name": "Running Shoes",
+        "description": "Cellular foam sole returns energy with every step.",
+        "alt": "Running shoe"
+      },
+      "spikes": {
+        "name": "Sprint Spikes",
+        "description": "8 pins, full grip in the first 30 meters.",
+        "alt": "Cream-colored track spikes with black and teal details"
+      },
+      "singlet": {
+        "name": "Race Singlet",
+        "description": "150 grams, perforated knit, wicks sweat away.",
+        "alt": "Race singlet"
+      },
+      "baton": {
+        "name": "Relay Baton",
+        "description": "Textured rubber surface, won't slip during the handoff.",
+        "alt": "Relay baton"
+      }
     },
     "swimming": {
-      "suit": { "name": "Competition Swimsuit", "description": "Smooth fabric, woven to cut drag through water." },
-      "goggles": { "name": "Swim Goggles", "description": "Hydrodynamic profile, anti-fog coated." },
-      "cap": { "name": "Swim Cap", "description": "One-piece mold, keeps hair flat against the water." },
-      "kickboard": { "name": "Kickboard", "description": "Cellular foam body, keeps you afloat." }
+      "blurb": "Designed to cut through water's resistance.",
+      "suit": {
+        "name": "Competition Swimsuit",
+        "description": "Smooth fabric, woven to cut drag through water.",
+        "alt": "Competition swimsuit"
+      },
+      "goggles": {
+        "name": "Swim Goggles",
+        "description": "Hydrodynamic profile, anti-fog coated.",
+        "alt": "Black-framed swimming goggles"
+      },
+      "cap": {
+        "name": "Swim Cap",
+        "description": "One-piece mold, keeps hair flat against the water.",
+        "alt": "Swim cap"
+      },
+      "kickboard": {
+        "name": "Kickboard",
+        "description": "Cellular foam body, keeps you afloat.",
+        "alt": "Kickboard"
+      }
     }
   }
 }
