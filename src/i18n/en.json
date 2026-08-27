@@ -36,6 +36,12 @@
     "baslik": "Four technologies, named.",
     "giris": "Every product carries a proven technology."
   },
+  "istatistikler": {
+    "brans": "Branches",
+    "teknoloji": "Technologies",
+    "imzaUrun": "Signature Products",
+    "saatTest": "Hours Tested"
+  },
   "footer": {
     "tagline": "Performance gear designed for 20 sports.",
     "copyright": "© {year} KINETRA. All rights reserved."

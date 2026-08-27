@@ -4,6 +4,7 @@ import { useSeo } from '../i18n/useSeo'
 import BranchWall from '../sections/BranchWall'
 import DeepShowcase from '../sections/DeepShowcase'
 import Hero from '../sections/Hero'
+import Istatistikler from '../sections/Istatistikler'
 import Teknoloji from '../sections/Teknoloji'
 
 const DONE_IDS = new Set(['branslar', 'vitrin', 'teknoloji'])
@@ -23,6 +24,7 @@ export default function Home() {
       <BranchWall />
       <DeepShowcase />
       <Teknoloji />
+      <Istatistikler />
 
       {REMAINING_PLACEHOLDERS.map((item, i) => {
         const isDark = i % 2 !== 0

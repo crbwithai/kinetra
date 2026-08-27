@@ -36,6 +36,12 @@
     "baslik": "Dört teknoloji, adı konmuş.",
     "giris": "Her ürün, kanıtlanmış bir teknolojiyle gelir."
   },
+  "istatistikler": {
+    "brans": "Branş",
+    "teknoloji": "Teknoloji",
+    "imzaUrun": "İmza Ürün",
+    "saatTest": "Saat Test"
+  },
   "footer": {
     "tagline": "20 branş için tasarlanmış performans ekipmanı.",
     "copyright": "© {year} KINETRA. Tüm hakları saklıdır."
