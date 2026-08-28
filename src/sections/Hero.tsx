@@ -1,6 +1,7 @@
 import { motion, useReducedMotion, useScroll, useTransform } from 'framer-motion'
 import { useRef } from 'react'
 import { Link } from 'react-router'
+import HeroTrajectories from '../components/HeroTrajectories'
 import { useLang } from '../i18n/LangContext'
 import { pagePath } from '../i18n/pages'
 import { translate } from '../i18n/translate'
@@ -49,6 +50,12 @@ export default function Hero() {
 
   return (
     <section ref={heroRef} className="relative -mt-2xl h-dvh overflow-hidden bg-bg-light text-bg-dark">
+      <HeroTrajectories
+        scrollYProgress={scrollYProgress}
+        shouldReduceMotion={Boolean(shouldReduceMotion)}
+        heroRef={heroRef}
+      />
+
       <div className="flex h-full flex-col items-start justify-center px-md pb-2xl">
         <motion.p
           {...fadeUpProps(DELAY.kunye)}
